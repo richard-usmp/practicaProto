@@ -12,8 +12,8 @@ namespace practicaProto.models
 
         public String t_impuestos {get; set;} 
 
-        public int precio_ini {get; set;} 
-        public int precio_fin {get; set;}
+        public double precio_ini {get; set;} 
+        public double precio_fin {get; set;}
 
     }
 
