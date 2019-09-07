@@ -3,33 +3,26 @@
 
 <!DOCTYPE html>
 <html>
-    <title>Dora App</title>
+    <title>Company</title>
 <body>
-    <h1>Bienvenido a Dora Site</h1><br>
+    <h1>Bienvenido</h1><br>
    
     <div>
-        <form asp-controller="Home" asp-action="RegistrarFan">
-            <label>Es un Fun</label><br/>
-            <label>Nombres</label>
-            <input asp-for="Name"/><br/>
-            <label>Correo</label>
-            <input asp-for="Email"/><br/>
-            <label>Estado Civil</label>
-            <select asp-for="MarriedStatus">
-                <option value="single">Soltero</option>
-                <option value="married">Casado</option>
-                <option value="divorced">Divorciado</option>
-                <option value="complicated">Complicado</option>
+        <form asp-controller="Home" asp-action="Company">
+            <label>Producto:</label>
+            <input asp-for="producto"/><br/>
+            <label>Categoria:</label>
+            <select asp-for="categoria">
+                <option value="cam">Camioneta</option>
+                <option value="auto">Automovil</option>
             </select><br/>
-            <label>Genero</label>
-            <input type="radio" asp-for="Gender" value="masculino"/>Masculino
-            <input type="radio" asp-for="Gender" value="femenino"/>Femenino<br/>
-            <label>Fecha Nacimiento</label>
-            <input asp-for="Birth"/><br/>
-            <input type="submit" value="Registrate"/>
+            <label>Tipo de impuestos:</label>
+                <input type="radio" asp-for="t_impuestos" value="naci"/>Nacional
+                <input type="radio" asp-for="t_impuestos" value="extran"/>Extranjera <br>
+            <label>Precio:</label>
+            <input asp-for="precio"/><br/>
+            <input type="submit" value="Calcular"/>
         </form>
-    </div>
-    <img src="images/dora.jpg" width="300px" height="200px"/>
-    
+    </div>   
 </body>
 </html>

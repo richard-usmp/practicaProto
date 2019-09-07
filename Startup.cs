@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using practicaProto.models;
 using Microsoft.EntityFrameworkCore;
+using practicaProto.models;
+
 namespace practicaProto
 {
     public class Startup
