@@ -1,0 +1,13 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model practicaProto.Company
+<!DOCTYPE html>
+<html>
+    <title>Company</title>
+<body>
+    <h1>La respuesta 
+        @Html.DisplayTextFor(model => model.producto)
+        @Html.DisplayTextFor(model => model.precio_ini)
+        @Html.DisplayTextFor(model => model.precio_fin)
+    </h1><br>
+</body>
+</html>
