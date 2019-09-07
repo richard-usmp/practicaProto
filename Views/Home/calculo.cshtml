@@ -4,10 +4,11 @@
 <html>
     <title>Company</title>
 <body>
-    <h1>La respuesta 
-        @Html.DisplayTextFor(model => model.producto)
-        @Html.DisplayTextFor(model => model.precio_ini)
-        @Html.DisplayTextFor(model => model.precio_fin)
-    </h1><br>
+    <h1>Producto:</h1>
+        @Html.DisplayTextFor(model => model.producto) <br>
+    <h1>Precio Inicial:</h1>
+        @Html.DisplayTextFor(model => model.precio_ini) <br>
+    <h1>Precio Final: </h1>
+        @Html.DisplayTextFor(model => model.precio_fin) <br>
 </body>
 </html>

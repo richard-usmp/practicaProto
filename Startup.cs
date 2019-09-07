@@ -21,9 +21,9 @@ namespace practicaProto
             services.AddDbContext<DatabaseContext>(options =>
                   
                     options.UseNpgsql(
-            "Host=ec2-54-83-9-36.compute-1.amazonaws.com;" +
-            "Database=d76dvfemdvq3b4;Username=tthuzzuumpwkry;"+
-            "Password=2b01c50438365ab95cc5496c0c580a594865bb02ede03ace69e9d263081aa2f0;"+
+            "Host=ec2-23-21-148-223.compute-1.amazonaws.com;" +
+            "Database=df5en92dou3cmi;Username=tqdwknsjcvudvr;"+
+            "Password=f5dd419258d1192918ba5e1565280560af436f98454ecbdc1892955ece6670fe;"+
             "Port=5432;SSL Mode=Require;Trust Server Certificate=true")
                   ); 
         }

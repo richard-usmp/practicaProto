@@ -18,6 +18,9 @@ namespace practicaProto.controllers{
         [HttpPost]
         public IActionResult calculo(Company com){
             Console.WriteLine("calculo");
+
+            Random rnd = new Random();
+            com.ID= rnd.Next(1000, 9999);
             double p_ini1=com.precio_ini;
             if(com.t_impuestos.Equals("extran")){
                 p_ini1 = p_ini1 * 1.3;
@@ -31,7 +34,7 @@ namespace practicaProto.controllers{
                 com.precio_fin = p_ini1 * 1.03;
             }
             Console.WriteLine("Precio final: " + com.precio_fin);
-            
+
             _context.Add(com);
             _context.SaveChanges();
 

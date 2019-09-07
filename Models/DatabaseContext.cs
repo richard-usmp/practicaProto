@@ -10,7 +10,7 @@ namespace practicaProto.models
         {
         }
         
-        public DbSet<Company> Companies { get; set; }
+        public DbSet<Company> Company { get; set; }
 
     }
 }
